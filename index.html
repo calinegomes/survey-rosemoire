@@ -7,5 +7,55 @@
 </head>
 <body>
     
+    <header> 
+
+        <h1> Online Survey </h1>
+
+    </header>
+    
+    <section>
+        <form action="" method="get">
+            <fieldset>
+                
+                <!-- PERSONAL INFORMATION -->
+
+                <legend>Personal Information</legend>
+            
+                <label for="userName">Name:</label>
+                <input type="text" name="userName" placeholder="Enter your name" required>
+                <br>
+                
+                <label for="userAge">Age:</label>
+                <input type="number" name="userAge" placeholder="Enter your age" min="12" max="100" required>
+                <br>
+                
+                <label for="birthDate">Date of Birth:</label>
+                <input type="date" name="birthDate" required>
+                <br>
+                
+                <label for="userEmail">Email:</label>
+                <input type="email" name="userEmail" placeholder="Enter your email" required>
+                <br>
+                
+                <label for="userPhone">Phone Number:</label>
+                <input type="tel" name="userPhone" placeholder="Area Code + XXXXXXXXXX" pattern="[0-9]{11}" required>
+                <br>
+                
+                <label for="userImage">Upload Image:</label>
+                <input type="file" accept="image/*" name="userImage">
+                <br>
+            
+            </fieldset>
+                
+                <button type="submit" value="Submit">Submit</button>
+
+
+        </form>
+
+    </section>
+
+      
+
+
 </body>
 </html>
