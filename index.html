@@ -15,9 +15,8 @@
     
     <section>
         <form action="" method="get">
-            <fieldset>
+            <!-- <fieldset>
                 
-                <!-- PERSONAL INFORMATION -->
 
                 <legend>Personal Information</legend>
             
@@ -44,12 +43,67 @@
                 <label for="userImage">Upload Image:</label>
                 <input type="file" accept="image/*" name="userImage">
                 <br>
-            
-            </fieldset>
+            </fieldset> -->
+                
+           
+            <fieldset>
+                <legend>Perfil</legend>
+               
+                <p>Gender:</p>
+
+                <input type="radio" name="userGender" value="female">
+                <label for="userGender">Female</label>
+                
+                <input type="radio" name="userGender" value="male">
+                <label for="userGender">Male</label>
+
+                <input type="radio" name="userGender" value="other">
+                <label for="userGender">Other</label>
+            <br>
+                
+                <label for="maritalStatus">Marital Status:</label>
+                <select name="maritalStatus">
+                    <option value="notInformed" disabled selected>Select your marital status</option>
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="divorced">Divorced</option>
+                    <option value="widowed">Widowed</option>
+                </select>
+               
+                <label for="userCountry">Country:</label>
+                <select name="userCountry" id="userCountry" required>
+                    <option value="NotInformed" disabled selected>Select your country</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="United States">United States</option>
+                    <option value="Canada">Canada</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="France">France</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Japan">Japan</option>
+                    <option value="South Korea">South Korea</option>
+                    <option value="China">China</option>
+                    <option value="Australia">Australia</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Sweden">Sweden</option>
+                </select>
+            <br>
+                
+                <label for="userCity">City:</label>
+                <input type="text" name="userCity" id="userCity" placeholder="Enter your city">
+
+                
+                
+                
                 
                 <button type="submit" value="Submit">Submit</button>
-
-
         </form>
 
     </section>
