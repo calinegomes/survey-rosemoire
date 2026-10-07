@@ -63,38 +63,39 @@
                 
                 <label for="maritalStatus">Marital Status:</label>
                 <select name="maritalStatus">
-                    <option value="notInformed">Select your marital status</option>
+                    <option value="notInformed" disabled selected>Select your marital status</option>
                     <option value="single">Single</option>
                     <option value="married">Married</option>
                     <option value="divorced">Divorced</option>
                     <option value="widowed">Widowed</option>
+                </select>
                
-                 </select>
-            </fieldset>
+                <label for="userCountry">Country:</label>
+                <select name="userCountry" id="userCountry" required>
+                    <option value="NotInformed" disabled selected>Select your country</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="United States">United States</option>
+                    <option value="Canada">Canada</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="France">France</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Japan">Japan</option>
+                    <option value="South Korea">South Korea</option>
+                    <option value="China">China</option>
+                    <option value="Australia">Australia</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Sweden">Sweden</option>
+                </select>
             
-            
-            
-            
-            
-            
-            
-                    <option value="other">Other</option>
 
-                </fieldset>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
             <button type="submit" value="Submit">Submit</button>
         </form>
