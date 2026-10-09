@@ -15,54 +15,54 @@
     
     <section>
         <form action="" method="get">
-            <!-- <fieldset>
+             <fieldset>
                 
 
                 <legend>Personal Information</legend>
             
                 <label for="userName">Name:</label>
-                <input type="text" name="userName" placeholder="Enter your name" required>
+                <input id="userName" type="text" name="userName" placeholder="Enter your name" required>
                 <br>
                 
                 <label for="userAge">Age:</label>
-                <input type="number" name="userAge" placeholder="Enter your age" min="12" max="100" required>
+                <input id="userAge" type="number" name="userAge" placeholder="Enter your age" min="12" max="100" required>
                 <br>
                 
                 <label for="birthDate">Date of Birth:</label>
-                <input type="date" name="birthDate" required>
+                <input id="birthDate" type="date" name="birthDate" required>
                 <br>
                 
                 <label for="userEmail">Email:</label>
-                <input type="email" name="userEmail" placeholder="Enter your email" required>
+                <input id="userEmail" type="email" name="userEmail" placeholder="Enter your email" required>
                 <br>
                 
                 <label for="userPhone">Phone Number:</label>
-                <input type="tel" name="userPhone" placeholder="Area Code + XXXXXXXXXX" pattern="[0-9]{11}" required>
+                <input id="userPhone" type="tel" name="userPhone" placeholder="Area Code + XXXXXXXXXX" pattern="[0-9]{11}" required>
                 <br>
                 
                 <label for="userImage">Upload Image:</label>
-                <input type="file" accept="image/*" name="userImage">
+                <input id="userImage" type="file" accept="image/*" name="userImage">
                 <br>
-            </fieldset> -->
+            </fieldset> 
                 
            
-            <fieldset>
+             <fieldset>
                 <legend>Perfil</legend>
                
                 <p>Gender:</p>
 
-                <input type="radio" name="userGender" value="female">
-                <label for="userGender">Female</label>
+                <input id="female" type="radio" name="userGender" value="female">
+                <label for="female">Female</label>
                 
-                <input type="radio" name="userGender" value="male">
-                <label for="userGender">Male</label>
+                <input id="male" type="radio" name="userGender" value="male">
+                <label for="male">Male</label>
 
-                <input type="radio" name="userGender" value="other">
-                <label for="userGender">Other</label>
+                <input id="other" type="radio" name="userGender" value="other">
+                <label for="other">Other</label>
             <br>
                 
                 <label for="maritalStatus">Marital Status:</label>
-                <select name="maritalStatus">
+                <select id="maritalStatus" name="userMaritalStatus">
                     <option value="notInformed" disabled selected>Select your marital status</option>
                     <option value="single">Single</option>
                     <option value="married">Married</option>
@@ -70,8 +70,8 @@
                     <option value="widowed">Widowed</option>
                 </select>
                
-                <label for="userCountry">Country:</label>
-                <select name="userCountry" id="userCountry" required>
+                <label for="Country">Country:</label>
+                <select id="Country" name="userCountry" required>
                     <option value="NotInformed" disabled selected>Select your country</option>
                     <option value="brazil">Brazil</option>
                     <option value="unitedStates">United States</option>
@@ -95,9 +95,47 @@
                     <option value="Sweden">Sweden</option>
                 </select>
             <br>
-                
                 <label for="userCity">City:</label>
-                <input type="text" name="userCity" id="userCity" placeholder="Enter your city">
+                <input id="userCity" type="text" name="userCity" placeholder="Enter your city">
+            </fieldset> 
+              
+            <fieldset>
+                <legend>Habits</legend>
+                
+                <p> Social Media</p>
+                <input id="instagram" type="checkbox" name="social" value="Instagram">
+                <label for="instagram">Instagram</label>
+                <br>
+                <input id="facebook" type="checkbox" name="social" value="Facebook">
+                <label for="facebook">Facebook</label>
+                <br>
+                <input id="twitter" type="checkbox" name="social" value="Twitter">
+                <label for="twitter">X (Twitter)</label>
+                <br>
+                <input id="tiktok" type="checkbox" name="social" value="TikTok">
+                <label for="tiktok">TikTok</label>
+                <br>
+                
+                <label for="musicStyle">Music Style:</label>
+                <input list="styleTypes" type="text" name="userMusicStyle" placeholder="Enter your favorite music style">
+                <datalist id="styleTypes">
+                    <option value="Pop">
+                    <option value="Rock">
+                    <option value="Celtic">
+                    <option value="Jazz">
+                    <option value="Classical">
+                    <option value="Electronic">
+                    <option value="Indie">
+                    <option value="Vintage">
+                    <option value="R&B">
+                </datalist>
+                <br>
+                
+                <label for="favoriteColor">Color:</label>
+                <input id="favoriteColor" type="color" name="userFavoriteColor" placeholder="Enter your favorite color">
+
+           
+            </fieldset>
 
                 
                 
