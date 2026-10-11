@@ -58,3 +58,41 @@ legend {
     color: #8a675d;
     padding: 0 5px;
 }
+
+label {
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #8a675d;
+    border-radius: 8px;
+    margin-bottom: 4px;
+}
+
+textarea {
+    min-height: 100px;
+    
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+input[type="color"] {
+  width: 40px;
+  padding: 0 5px;
+}
+
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: none;
+    border: 1px dashed #e45b67;
+    box-shadow: 0 0 4px #e48f96;
+}
