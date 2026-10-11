@@ -1,5 +1,4 @@
-
-/* General Settings */
+/* Reset Settings */
 
 * {
     margin: 0;
@@ -7,10 +6,16 @@
     box-sizing: border-box;
 }
 
-/* Page */
+
+/* Page Settings */
 
 body {
     background-color: #ffdedf;
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'Cormorant Garamond', serif;
 }
 
@@ -20,6 +25,26 @@ main {
     margin: 0 auto;
     color: #7e584e;
 }
+
+
+/* Mist Effect */
+
+.mist {
+    position: relative;
+}
+
+.mist-image {
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 20px);
+    object-fit: fill;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
 
 /* Header and Logo */
 
@@ -31,28 +56,32 @@ header {
 img.logo {
     width: 300px;
     height: auto;
-    margin: 0 auto;
+    margin: -25px auto;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 40px;
     color: #8a675d;
-    margin-bottom: 10px;
     font-family: 'Tangerine', cursive;
-    margin-top: 0;
+    margin: 7px 0 10px 0;
+    text-align: center;
 }
 
-/* Form */
+
+/* Form Container */
 
 form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 20px;
     padding: 25px;
+    padding-bottom: 30px;
     background-color: #ffe9ea;
     border-radius: 15px;
     font-size: 20px;
 }
+
 
 /* Form Sections */
 
@@ -64,18 +93,75 @@ fieldset {
 }
 
 legend {
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bold;
     color: #8a675d;
     padding: 0 5px;
 }
 
-/* Labels and Input Fields */
+
+/* Labels and Text */
 
 label {
     display: inline-block;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
+    font-weight: 500;
 }
+
+label[for="userImage"] {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 6px;
+}
+
+label[for="maritalStatus"] {
+    display: inline-block;
+    margin-top: 4px;
+    font-weight: 600;
+}
+
+label[for="musicStyle"] {
+    display: inline-block;
+    margin-top: 3px;
+    font-weight: 600;
+}
+
+label[for="userCity"],
+label[for="country"],
+label[for="userName"],
+label[for="userAge"],
+label[for="birthDate"],
+label[for="userEmail"],
+label[for="userImage"],
+label[for="userNumber"] {
+font-weight: 600
+}
+
+
+label[for="userComments"] {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+label[for="female"],
+label[for="male"] {
+    margin-right: 10px;
+}
+
+label[for="priceRange500plus"],
+label[for="outfitUniqueness"],
+label[for="themeOther"] {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 4px;
+    color: #7e584e;
+    font-weight: 600;
+}
+
+
+/* Input Fields */
 
 input,
 select,
@@ -87,16 +173,21 @@ textarea {
     margin-bottom: 4px;
 }
 
+#musicStyle {
+    margin-bottom: 10px;
+}
+
 textarea {
     min-height: 100px;
 }
+
 
 /* Radio Buttons and Checkboxes */
 
 input[type="radio"],
 input[type="checkbox"] {
     width: auto;
-    accent-color: #c77d93;
+    accent-color: #c28396;
 }
 
 input[type="radio"]:focus {
@@ -104,14 +195,28 @@ input[type="radio"]:focus {
     box-shadow: none;
 }
 
+
 /* Color Picker */
 
 input[type="color"] {
     width: 40px;
     padding: 0 5px;
-    border: 1px solid #C77D83;
+    border: 1px solid #c28396;
     background-color: #fff5f5;
 }
+
+
+/* File Upload Field */
+
+input[type="file"] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #8a675d;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 16px;
+}
+
 
 /* Placeholder Text */
 
@@ -120,6 +225,13 @@ input::placeholder {
     font-family: 'Cormorant Garamond', serif;
     font-size: 16px;
 }
+
+textarea::placeholder {
+    font-family: 'Cormorant Garamond', serif;
+    color: #C77D83;
+    font-size: 16px;
+}
+
 
 /* File Upload Button */
 
@@ -131,6 +243,8 @@ input[type="file"]::file-selector-button {
     border: 1px solid #C77D83;
     border-radius: 8px;
     padding: 6px 12px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 input[type="file"]::file-selector-button:hover {
@@ -140,6 +254,41 @@ input[type="file"]::file-selector-button:hover {
     border: dashed 1px #e45b67;
     box-shadow: 0 0 4px #e48f96;
 }
+
+
+/* Form Buttons */
+
+button {
+    width: 130px;
+    height: 30px;
+    padding: 6px 25px;
+    background-color: #ffd8dc;
+    border: 1px solid #c28396;
+    border-radius: 8px;
+    font-family: 'Montserrat', cursive;
+    font-size: 15px;
+    color: #7E584E;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: auto;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffd0d3;
+    color: #FFFFFF;
+    border-color: #c5828d;
+    border: dashed 1px #e45b67;
+    box-shadow: 0 0 4px #e48f96;
+}
+
+button[type="reset"]:hover {
+    background-color: #ff9fa6;
+    color: #FFFFFF;
+    border-color: #c5828d;
+    border: dashed 1px #e45b67;
+    box-shadow: 0 0 4px #e48f96;
+}
+
 
 /* Input Focus Effects */
 
@@ -152,9 +301,27 @@ button:focus {
     box-shadow: 0 0 4px #e48f96;
 }
 
-/* Selected Option */
+
+/* Selected Option Color */
 
 select option:checked {
-    background: #f4b6c2 linear-gradient(#f4b6c2, #f4b6c2);
+    background: #f4b6c2 linear-gradient(#16070a, #f4b6c2);
     color: #7e584e;
+}
+
+
+/* Input Validation States */
+
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+    border-color: #eb868e;
+    box-shadow: 0 0 4px #ff818b;
+}
+
+input:user-valid,
+select:user-valid,
+textarea:user-valid {
+    border-color: #d8a0ad;
+    box-shadow: 0 0 4px #ffd8e1;
 }
