@@ -9,3 +9,52 @@ body {
     font-family: 'Cormorant Garamond', sans serif;
 }
 
+main {
+   width: 100%;
+   max-width: 700px;
+   margin: 0 auto;
+   color: #7e584e;
+}
+
+header {
+    text-align: center;
+    margin-bottom:  10px;
+}
+
+img.logo {
+    width: 300px;
+    height: auto;
+    margin: 0 auto 0 auto;
+}
+
+h1 {
+    font-size: 60px;
+    color: #8a675d;
+    margin-bottom: 10px;
+    font-family: 'Tangerine', cursive;
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px;
+    background-color: #ffe9ea;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+fieldset {
+    padding: 15px;
+    border: 1px solid #8a675d;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: #8a675d;
+    padding: 0 5px;
+}
