@@ -1,296 +1,241 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Favicon and CSS -->
+    
+    <!-- 𐙚 Favicon and CSS -->
     <link rel="icon" type="image/png" href="./rosemoire-favicon-32x32.png">
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Fonts -->
+   
+    <!-- 𐙚 Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300..700&family=Montserrat&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300..700&amp;family=Montserrat&amp;family=Tangerine:wght@400;700&amp;display=swap" rel="stylesheet">
     <title>Rosemoire Survey</title>
 </head>
 <body>
-        <div class="mist">
+    <div class="mist">
         <img src="img/mist.png" alt="" class="mist-image">
-
-    <main>
-        
-        <!-- Header -->
+        <main>
+            
+          <!-- 𐙚 Header -->
         <header>
-            <img src="img/Logo-Rosemoire-1.png" alt="Rosemoire Logo" class="logo">
-            <h1>Online Survey</h1>
+        <img src="img/Logo-Rosemoire-1.png"
+         alt="Rosémoire" class="logo">
+        <h1 id="surveyTitle">Online Survey</h1>
         </header>
 
-        <!-- Survey Form -->
-        <section>
-        <form action="sucess.html" method="get">
-
-                <!-- Personal Information -->
-                <fieldset>
-                    <legend>Personal Information</legend>
-
-                    <label for="userName">Name:</label>
-                    <input id="userName" type="text" name="userName" placeholder="Enter your name" required>
-                    <br>
-
-                    <label for="userAge">Age:</label>
-                    <input id="userAge" type="number" name="userAge" placeholder="Enter your age" min="12" max="100" required>
-                    <br>
-
-                    <label for="birthDate">Date of Birth:</label>
-                    <input id="birthDate" type="date" name="birthDate" required>
-                    <br>
-
-                    <label for="userEmail">Email:</label>
-                    <input id="userEmail" type="email" name="userEmail" placeholder="Enter your email" required>
-                    <br>
-
-                    <label for="userPhone">Phone Number:</label>
-                    <input id="userPhone" type="tel" name="userPhone" placeholder="Area Code + XXXXXXXXXX" pattern="[0-9]{11}" required>
-                    <br>
-
-                    <label for="userImage">Upload Image:</label>
-                    <input id="userImage" type="file" accept="image/*" name="userImage">
-                    <br>
-                </fieldset>
-
-                <!-- Profile -->
-                <fieldset>
-                    <legend>Profile</legend>
-
-                    <p>Gender:</p>
-
-                    <input id="female" type="radio" name="userGender" value="female">
-                    <label for="female">Female</label>
-
-                    <input id="male" type="radio" name="userGender" value="male">
-                    <label for="male">Male</label>
-
-                    <input id="other" type="radio" name="userGender" value="other">
-                    <label for="other">Other</label>
-                    <br>
-
-                    <label for="maritalStatus">Marital Status:</label>
-                    <select id="maritalStatus" name="userMaritalStatus">
-                        <option value="notInformed" disabled selected>Select your marital status</option>
-                        <option value="single">Single</option>
-                        <option value="married">Married</option>
-                        <option value="divorced">Divorced</option>
-                        <option value="widowed">Widowed</option>
-                    </select>
-
-                    <label for="country">Country:</label>
-                    <select id="country" name="userCountry" required>
-                        <option value="" disabled selected>Select your country</option>
-                        <option value="brazil">Brazil</option>
-                        <option value="unitedStates">United States</option>
-                        <option value="canada">Canada</option>
-                        <option value="unitedKingdom">United Kingdom</option>
-                        <option value="france">France</option>
-                        <option value="germany">Germany</option>
-                        <option value="italy">Italy</option>
-                        <option value="spain">Spain</option>
-                        <option value="portugal">Portugal</option>
-                        <option value="japan">Japan</option>
-                        <option value="southKorea">South Korea</option>
-                        <option value="china">China</option>
-                        <option value="australia">Australia</option>
-                        <option value="newZealand">New Zealand</option>
-                        <option value="mexico">Mexico</option>
-                        <option value="argentina">Argentina</option>
-                        <option value="chile">Chile</option>
-                        <option value="netherlands">Netherlands</option>
-                        <option value="switzerland">Switzerland</option>
-                        <option value="sweden">Sweden</option>
-                    </select>
-                    <br>
-
-                    <label for="userCity">City:</label>
-                    <input id="userCity" type="text" name="userCity" placeholder="Enter your city">
-                </fieldset>
-
-                <!-- Habits -->
-                <fieldset>
-                    <legend>Habits</legend>
-
-                    <p>Social Media</p>
-
-                    <input id="instagram" type="checkbox" name="social" value="Instagram">
-                    <label for="instagram">Instagram</label>
-                    <br>
-
-                    <input id="facebook" type="checkbox" name="social" value="Facebook">
-                    <label for="facebook">Facebook</label>
-                    <br>
-
-                    <input id="twitter" type="checkbox" name="social" value="Twitter">
-                    <label for="twitter">X (Twitter)</label>
-                    <br>
-
-                    <input id="tiktok" type="checkbox" name="social" value="TikTok">
-                    <label for="tiktok">TikTok</label>
-                    <br>
-
-                    <label for="musicStyle">Music Style:</label>
-                    <input id="musicStyle" list="styleTypes" type="text" name="userMusicStyle" placeholder="Enter your favorite music style">
-
-                    <datalist id="styleTypes">
-                        <option value="Pop">
-                        <option value="Rock">
-                        <option value="Celtic">
-                        <option value="Jazz">
-                        <option value="Classical">
-                        <option value="Electronic">
-                        <option value="Indie">
-                        <option value="Vintage">
-                        <option value="R&B">
-                    </datalist>
-                    <br>
-
-                    <label for="favoriteColor">Favorite Color:</label>
-                    <input id="favoriteColor" type="color" name="userFavoriteColor">
-                    <br>
-                </fieldset>
-
-                <!-- Feedback -->
-                <fieldset>
-                    <legend>Feedback</legend>
-
-                    <p> What price range do you usually look for when shopping for clothing?</p>
-
-                    <input id="priceRangeUnder50" type="radio" name="priceRange" value="under50">
-                    <label for="priceRangeUnder50">Under $50</label>
-                    <br>
-
-                    <input id="priceRange50to99" type="radio" name="priceRange" value="50to99">
-                    <label for="priceRange50to99">$50–$99</label>
-                    <br>
-
-                    <input id="priceRange100to199" type="radio" name="priceRange" value="100to199">
-                    <label for="priceRange100to199">$100–$199</label>
-                    <br>
-
-                    <input id="priceRange200to299" type="radio" name="priceRange" value="200to299">
-                    <label for="priceRange200to299">$200–$299</label>
-                    <br>
-
-                    <input id="priceRange300to499" type="radio" name="priceRange" value="300to499">
-                    <label for="priceRange300to499">$300–$499</label>
-                    <br>
-
-                    <input id="priceRange500plus" type="radio" name="priceRange" value="500plus">
-                    <label for="priceRange500plus">$500 or more</label>
-                    <br>
-
-                    <p>What matters most to you when choosing an outfit?</p>
-
-                    <input id="outfitDesign" type="radio" name="outfitPreference" value="design">
-                    <label for="outfitDesign">Design</label>
-                    <br>
-
-                    <input id="outfitQuality" type="radio" name="outfitPreference" value="fabricQuality">
-                    <label for="outfitQuality">Fabric quality</label>
-                    <br>
-
-                    <input id="outfitComfort" type="radio" name="outfitPreference" value="comfort">
-                    <label for="outfitComfort">Comfort</label>
-                    <br>
-
-                    <input id="outfitPrice" type="radio" name="outfitPreference" value="price">
-                    <label for="outfitPrice">Price</label>
-                    <br>
-
-                    <input id="outfitFit" type="radio" name="outfitPreference" value="fitAndSizing">
-                    <label for="outfitFit">Fit and sizing</label>
-                    <br>
-
-                    <input id="outfitUniqueness" type="radio" name="outfitPreference" value="uniqueness">
-                    <label for="outfitUniqueness">Uniqueness</label>
-                    <br>
-
-                    <p>What kind of collection / styling theme would you like to see more?</p>
-
-                    <input id="themeSweetLolita" type="radio" name="collectionTheme" value="sweetLolita">
-                    <label for="themeSweetLolita">Sweet Lolita</label>
-                    <br>
-
-                    <input id="themeGothicLolita" type="radio" name="collectionTheme" value="gothicLolita">
-                    <label for="themeGothicLolita">Gothic Lolita</label>
-                    <br>
-
-                    <input id="themeClassicLolita" type="radio" name="collectionTheme" value="classicLolita">
-                    <label for="themeClassicLolita">Classic Lolita</label>
-                    <br>
-
-                    <input id="themeVintage" type="radio" name="collectionTheme" value="vintage">
-                    <label for="themeVintage">Vintage</label>
-                    <br>
-
-                    <input id="themeFairyTale" type="radio" name="collectionTheme" value="fairyTale">
-                    <label for="themeFairyTale">Fairy Tale</label>
-                    <br>
-
-                    <input id="themeRomantic" type="radio" name="collectionTheme" value="romantic">
-                    <label for="themeRomantic">Romantic</label>
-                    <br>
-
-                    <input id="themeDarkAcademia" type="radio" name="collectionTheme" value="darkAcademia">
-                    <label for="themeDarkAcademia">Dark Academia</label>
-                    <br>
-
-                    <input id="themeOther" type="radio" name="collectionTheme" value="other">
-                    <label for="themeOther">Other</label>
-                    <br>
-
-                    <p>How would you rate your experience with our service?</p>
-
-                    <input id="userOpinionGood" type="radio" name="userOpinion" value="good">
-                    <label for="userOpinionGood">Good</label>
-                    <br>
-
-                    <input id="userOpinionNeutral" type="radio" name="userOpinion" value="neutral">
-                    <label for="userOpinionNeutral">Neutral</label>
-                    <br>
-
-                    <input id="userOpinionBad" type="radio" name="userOpinion" value="bad">
-                    <label for="userOpinionBad">Bad</label>
-                    <br>
-
-                    <input id="userOpinionVeryBad" type="radio" name="userOpinion" value="veryBad">
-                    <label for="userOpinionVeryBad">Very Bad</label>
-                    <br>
-
-                    <label for="userComments">Comments:</label>
-                    <textarea id="userComments" name="userComments" placeholder="Enter your comments"></textarea>
-                </fieldset>
-
-                <!-- Confirmations -->
-                <fieldset>
-                    <legend>Confirmations</legend>
-
-                    <input id="userLgpdTerm" type="checkbox" name="userLgpdTerm" value="agree" required>
-                    <label for="userLgpdTerm">I agree to participate in the survey.</label>
-                    <br>
-
-                    <input id="getResults" type="checkbox" name="userGetResults" value="agree">
-                    <label for="getResults">I agree to receive the results by email.</label>
-                </fieldset>
-
-                <!-- Form Buttons -->
-                <button type="submit">Submit</button>
-                <button type="reset">Clear</button>
-
-                </form>
+    <!-- 𐙚 Survey Form -->
+<section>
+    <form action="success.html" method="get" aria-labelledby="surveyTitle">
+                    
+                    <!-- 𐙚 Personal Information -->
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="userName">Name:</label>
+                        <input id="userName" type="text" name="userName" placeholder="Enter your name" required>
+                        <br>
+                        <label for="userAge">Age:</label>
+                        <input id="userAge" type="number" name="userAge" placeholder="Enter your age" min="12" max="100" required>
+                        <br>
+                        <label for="birthDate">Date of Birth:</label>
+                        <input id="birthDate" type="date" name="birthDate" required>
+                        <br>
+                        <label for="userEmail">Email:</label>
+                        <input id="userEmail" type="email" name="userEmail" placeholder="Enter your email" required>
+                        <br>
+                        <label for="userPhone">Phone Number:</label>
+                        <input id="userPhone" type="tel" name="userPhone" placeholder="Area Code + XXXXXXXXXXX" pattern="[0-9]{11}" required>
+                        <br>
+                        <label for="userImage">Upload Image:</label>
+                        <input id="userImage" type="file" accept="image/*" name="userImage">
+                        <br>
+                    </fieldset>
+                    
+                    <!-- 𐙚 Profile -->
+                    <fieldset>
+                        <legend>Profile</legend>
+                        <p>Gender:</p>
+                        <input id="female" type="radio" name="userGender" value="female">
+                        <label for="female">Female</label>
+                        <input id="male" type="radio" name="userGender" value="male">
+                        <label for="male">Male</label>
+                        <input id="other" type="radio" name="userGender" value="other">
+                        <label for="other">Other</label>
+                        <br>
+                        <label for="maritalStatus">Marital Status:</label>
+                        <select id="maritalStatus" name="userMaritalStatus">
+                            <option value="notInformed" disabled selected>Select your marital status</option>
+                            <option value="single">Single</option>
+                            <option value="married">Married</option>
+                            <option value="divorced">Divorced</option>
+                            <option value="widowed">Widowed</option>
+                        </select>
+                        <label for="country">Country:</label>
+                        <select id="country" name="userCountry" required>
+                            <option value="" disabled selected>Select your country</option>
+                            <option value="brazil">Brazil</option>
+                            <option value="unitedStates">United States</option>
+                            <option value="canada">Canada</option>
+                            <option value="unitedKingdom">United Kingdom</option>
+                            <option value="france">France</option>
+                            <option value="germany">Germany</option>
+                            <option value="italy">Italy</option>
+                            <option value="spain">Spain</option>
+                            <option value="portugal">Portugal</option>
+                            <option value="japan">Japan</option>
+                            <option value="southKorea">South Korea</option>
+                            <option value="china">China</option>
+                            <option value="australia">Australia</option>
+                            <option value="newZealand">New Zealand</option>
+                            <option value="mexico">Mexico</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="chile">Chile</option>
+                            <option value="netherlands">Netherlands</option>
+                            <option value="switzerland">Switzerland</option>
+                            <option value="sweden">Sweden</option>
+                        </select>
+                        <br>
+                        <label for="userCity">City:</label>
+                        <input id="userCity" type="text" name="userCity" placeholder="Enter your city">
+                    </fieldset>
+                    
+                    <!-- 𐙚 Habits -->
+                    <fieldset>
+                        <legend>Habits</legend>
+                        <p>Social Media</p>
+                        <input id="instagram" type="checkbox" name="social" value="Instagram">
+                        <label for="instagram">Instagram</label>
+                        <br>
+                        <input id="facebook" type="checkbox" name="social" value="Facebook">
+                        <label for="facebook">Facebook</label>
+                        <br>
+                        <input id="twitter" type="checkbox" name="social" value="Twitter">
+                        <label for="twitter">X (Twitter)</label>
+                        <br>
+                        <input id="tiktok" type="checkbox" name="social" value="TikTok">
+                        <label for="tiktok">TikTok</label>
+                        <br>
+                        <label for="musicStyle">Music Style:</label>
+                        <input id="musicStyle" list="styleTypes" type="text" name="userMusicStyle" placeholder="Enter your favorite music style">
+                        <datalist id="styleTypes">
+                            <option value="Pop">
+                            <option value="Rock">
+                            <option value="Celtic">
+                            <option value="Jazz">
+                            <option value="Classical">
+                            <option value="Electronic">
+                            <option value="Indie">
+                            <option value="Vintage">
+                            <option value="R&B">
+                        </datalist>
+                        <br>
+                        <label for="favoriteColor">Favorite Color:</label>
+                        <input id="favoriteColor" type="color" name="userFavoriteColor">
+                        <br>
+                    </fieldset>
+                    
+                    <!-- 𐙚 Feedback -->
+                    <fieldset>
+                        <legend>Feedback</legend>
+                        <p> What price range do you usually look for when shopping for clothing?</p>
+                        <input id="priceRangeUnder50" type="radio" name="priceRange" value="under50">
+                        <label for="priceRangeUnder50">Under $50</label>
+                        <br>
+                        <input id="priceRange50to99" type="radio" name="priceRange" value="50to99">
+                        <label for="priceRange50to99">$50–$99</label>
+                        <br>
+                        <input id="priceRange100to199" type="radio" name="priceRange" value="100to199">
+                        <label for="priceRange100to199">$100–$199</label>
+                        <br>
+                        <input id="priceRange200to299" type="radio" name="priceRange" value="200to299">
+                        <label for="priceRange200to299">$200–$299</label>
+                        <br>
+                        <input id="priceRange300to499" type="radio" name="priceRange" value="300to499">
+                        <label for="priceRange300to499">$300–$499</label>
+                        <br>
+                        <input id="priceRange500plus" type="radio" name="priceRange" value="500plus">
+                        <label for="priceRange500plus">$500 or more</label>
+                        <br>
+                        <p>What matters most to you when choosing an outfit?</p>
+                        <input id="outfitDesign" type="radio" name="outfitPreference" value="design">
+                        <label for="outfitDesign">Design</label>
+                        <br>
+                        <input id="outfitQuality" type="radio" name="outfitPreference" value="fabricQuality">
+                        <label for="outfitQuality">Fabric quality</label>
+                        <br>
+                        <input id="outfitComfort" type="radio" name="outfitPreference" value="comfort">
+                        <label for="outfitComfort">Comfort</label>
+                        <br>
+                        <input id="outfitPrice" type="radio" name="outfitPreference" value="price">
+                        <label for="outfitPrice">Price</label>
+                        <br>
+                        <input id="outfitFit" type="radio" name="outfitPreference" value="fitAndSizing">
+                        <label for="outfitFit">Fit and sizing</label>
+                        <br>
+                        <input id="outfitUniqueness" type="radio" name="outfitPreference" value="uniqueness">
+                        <label for="outfitUniqueness">Uniqueness</label>
+                        <br>
+                        <p>What kind of collection / styling theme would you like to see more?</p>
+                        <input id="themeSweetLolita" type="radio" name="collectionTheme" value="sweetLolita">
+                        <label for="themeSweetLolita">Sweet Lolita</label>
+                        <br>
+                        <input id="themeGothicLolita" type="radio" name="collectionTheme" value="gothicLolita">
+                        <label for="themeGothicLolita">Gothic Lolita</label>
+                        <br>
+                        <input id="themeClassicLolita" type="radio" name="collectionTheme" value="classicLolita">
+                        <label for="themeClassicLolita">Classic Lolita</label>
+                        <br>
+                        <input id="themeVintage" type="radio" name="collectionTheme" value="vintage">
+                        <label for="themeVintage">Vintage</label>
+                        <br>
+                        <input id="themeFairyTale" type="radio" name="collectionTheme" value="fairyTale">
+                        <label for="themeFairyTale">Fairy Tale</label>
+                        <br>
+                        <input id="themeRomantic" type="radio" name="collectionTheme" value="romantic">
+                        <label for="themeRomantic">Romantic</label>
+                        <br>
+                        <input id="themeDarkAcademia" type="radio" name="collectionTheme" value="darkAcademia">
+                        <label for="themeDarkAcademia">Dark Academia</label>
+                        <br>
+                        <input id="themeOther" type="radio" name="collectionTheme" value="other">
+                        <label for="themeOther">Other</label>
+                        <br>
+                        <p>How would you rate your experience with our service?</p>
+                        <input id="userOpinionGood" type="radio" name="userOpinion" value="good">
+                        <label for="userOpinionGood">Good</label>
+                        <br>
+                        <input id="userOpinionNeutral" type="radio" name="userOpinion" value="neutral">
+                        <label for="userOpinionNeutral">Neutral</label>
+                        <br>
+                        <input id="userOpinionBad" type="radio" name="userOpinion" value="bad">
+                        <label for="userOpinionBad">Bad</label>
+                        <br>
+                        <input id="userOpinionVeryBad" type="radio" name="userOpinion" value="veryBad">
+                        <label for="userOpinionVeryBad">Very Bad</label>
+                        <br>
+                        <label for="userComments">Comments:</label>
+                        <textarea id="userComments" name="userComments" placeholder="Enter your comments"></textarea>
+                    </fieldset>
+                    
+                    <!-- 𐙚 Confirmations -->
+                    <fieldset>
+                        <legend>Confirmations</legend>
+                        <input id="userLgpdTerm" type="checkbox" name="userLgpdTerm" value="agree" required>
+                        <label for="userLgpdTerm">I agree to participate in the survey.</label>
+                        <br>
+                        <input id="getResults" type="checkbox" name="userGetResults" value="agree">
+                        <label for="getResults">I agree to receive the results by email.</label>
+                    </fieldset>
+                    
+                    <!-- 𐙚 Form Buttons -->
+                    <button type="submit" class="submit-button" aria-label="Submit survey"></button>
+                    <button type="reset" aria-label="Clear survey">Clear</button>              
+                    </form>
+            
             </section>
-        </div>
-    </main>
-
+        </main>
+    </div>
 </body>
 </html>

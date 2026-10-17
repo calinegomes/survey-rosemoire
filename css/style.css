@@ -1,14 +1,15 @@
-/* Reset Settings */
-
+/* 𐙚 Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scrollbar-gutter: stable;
+}
 
-/* Page Settings */
-
+/* 𐙚 Page settings */
 body {
     background-color: #ffdedf;
     background-image: url("../img/background.png");
@@ -26,28 +27,26 @@ main {
     color: #7e584e;
 }
 
-
-/* Mist Effect */
-
+/* 𐙚 Mist effect */
 .mist {
     position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mist-image {
     position: absolute;
+    inset: 0;
     width: 100%;
-    height: calc(100% + 20px);
-    object-fit: fill;
-    top: 0;
-    left: 0;
+    height: 100%;
+    object-fit: cover;
     z-index: -1;
-    pointer-events: none;
     opacity: 0.7;
 }
 
-
-/* Header and Logo */
-
+/* 𐙚 Survey header and logo */
 header {
     text-align: center;
     margin-bottom: 10px;
@@ -63,24 +62,19 @@ h1 {
     font-size: 40px;
     color: #8a675d;
     font-family: 'Tangerine', cursive;
-    margin: 7px 0 10px 0;
+    margin: 7px 0 10px;
     text-align: center;
 }
 
-
-/* Form Container */
-
+/* 𐙚 Survey form */
 form {
     margin-bottom: 20px;
-    padding: 25px;
-    padding-bottom: 30px;
+    padding: 25px 25px 30px;
     background-color: #ffe9ea;
     border-radius: 15px;
     font-size: 20px;
+    border: 1px solid #7e584e;
 }
-
-
-/* Form Sections */
 
 fieldset {
     padding: 15px;
@@ -96,9 +90,7 @@ legend {
     padding: 0 5px;
 }
 
-
-/* Labels and Text */
-
+/* 𐙚 Survey labels and text */
 label {
     display: inline-block;
     margin-bottom: 4px;
@@ -112,13 +104,11 @@ label[for="userImage"] {
 }
 
 label[for="maritalStatus"] {
-    display: inline-block;
     margin-top: 4px;
     font-weight: 600;
 }
 
 label[for="musicStyle"] {
-    display: inline-block;
     margin-top: 3px;
     font-weight: 600;
 }
@@ -130,13 +120,11 @@ label[for="userAge"],
 label[for="birthDate"],
 label[for="userEmail"],
 label[for="userImage"],
-label[for="userNumber"] {
-font-weight: 600
+label[for="userPhone"] {
+    font-weight: 600;
 }
 
-
 label[for="userComments"] {
-    display: inline-block;
     margin-top: 8px;
 }
 
@@ -157,9 +145,7 @@ p {
     font-weight: 600;
 }
 
-
-/* Input Fields */
-
+/* 𐙚 Survey inputs */
 input,
 select,
 textarea {
@@ -178,22 +164,11 @@ textarea {
     min-height: 100px;
 }
 
-
-/* Radio Buttons and Checkboxes */
-
 input[type="radio"],
 input[type="checkbox"] {
     width: auto;
     accent-color: #c28396;
 }
-
-input[type="radio"]:focus {
-    outline: none;
-    box-shadow: none;
-}
-
-
-/* Color Picker */
 
 input[type="color"] {
     width: 40px;
@@ -202,42 +177,23 @@ input[type="color"] {
     background-color: #fff5f5;
 }
 
-
-/* File Upload Field */
-
 input[type="file"] {
-    width: 100%;
-    box-sizing: border-box;
-    border: 1px solid #8a675d;
-    border-radius: 8px;
-    padding: 8px;
     font-size: 16px;
 }
 
-
-/* Placeholder Text */
-
-input::placeholder {
-    color: #C77D83;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 16px;
-}
-
+input::placeholder,
 textarea::placeholder {
+    color: #c77d83;
     font-family: 'Cormorant Garamond', serif;
-    color: #C77D83;
     font-size: 16px;
 }
-
-
-/* File Upload Button */
 
 input[type="file"]::file-selector-button {
     background-color: #ffd8dc;
-    color: #7E584E;
+    color: #7e584e;
     font-family: 'Cormorant Garamond', serif;
     font-size: 16px;
-    border: 1px solid #C77D83;
+    border: 1px solid #c77d83;
     border-radius: 8px;
     padding: 6px 12px;
     margin-right: 10px;
@@ -246,16 +202,16 @@ input[type="file"]::file-selector-button {
 
 input[type="file"]::file-selector-button:hover {
     background-color: #ffd0d3;
-    color: #FFFFFF;
-    border-color: #c5828d;
-    border: dashed 1px #e45b67;
+    color: #ffffff;
+    border: 1px dashed #e45b67;
     box-shadow: 0 0 4px #e48f96;
 }
 
-
-/* Form Buttons */
-
+/* 𐙚 Survey buttons */
 button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 130px;
     height: 30px;
     padding: 6px 25px;
@@ -264,33 +220,39 @@ button {
     border-radius: 8px;
     font-family: 'Montserrat', cursive;
     font-size: 15px;
-    color: #7E584E;
+    color: #7e584e;
     font-weight: bold;
     cursor: pointer;
-    align-self: auto;
 }
 
+.submit-button {
+    width: 300px;
+    height: 100px;
+    background-image: url("../img/submitbutton.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: -5px auto 0;
+    transition: transform 0.2s ease;
+}
 
-
-button[type="submit"]:hover {
-    background-color: #ffd0d3;
-    color: #FFFFFF;
-    border-color: #c5828d;
-    border: dashed 1px #e45b67;
-    box-shadow: 0 0 4px #e48f96;
+.submit-button:hover {
+    background-image: url("../img/submitbuttonhover.png");
+    transform: scale(1.05);
+    filter: drop-shadow(0 4px 6px #e48f96);
 }
 
 button[type="reset"]:hover {
     background-color: #ff9fa6;
-    color: #FFFFFF;
-    border-color: #c5828d;
-    border: dashed 1px #e45b67;
+    color: #ffffff;
+    border: 1px dashed #e45b67;
     box-shadow: 0 0 4px #e48f96;
 }
 
-
-/* Input Focus Effects */
-
+/* 𐙚 Survey focus and validation */
 input:focus,
 textarea:focus,
 select:focus,
@@ -300,16 +262,10 @@ button:focus {
     box-shadow: 0 0 4px #e48f96;
 }
 
-
-/* Selected Option Color */
-
 select option:checked {
     background: #f4b6c2 linear-gradient(#16070a, #f4b6c2);
     color: #7e584e;
 }
-
-
-/* Input Validation States */
 
 input:user-invalid,
 select:user-invalid,
@@ -324,3 +280,235 @@ textarea:user-valid {
     border-color: #d8a0ad;
     box-shadow: 0 0 4px #ffd8e1;
 }
+
+
+
+
+
+
+
+
+
+
+/* 𐙚 Success page */
+.success-box {
+    width: 100%;
+    max-width: 1000px;
+    min-height: auto;
+    padding: 50px 50px 20px;    
+    margin: 20px auto 0;
+    text-align: center;
+    background-color: #ffe9ea;
+    border-radius: 15px;
+    border: 1px solid #7e584e;
+}
+
+.success-box h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 60px;
+    margin-top: -20px;
+    font-weight: 600;
+}
+
+.success-box h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    margin-top: -1px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.success-box .p1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: -1px;
+    margin-left: 13px;
+}
+
+.success-box .p2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px;
+    font-weight: 500;
+    font-style: italic;
+    color: #d394a8;
+}
+
+/* 𐙚 Success logo and page layout */
+.sucess-header {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.logo-sucess {
+    display: block;
+    width: 300px;
+    max-width: 80%;
+    height: auto;
+    margin: -20px auto;
+}
+
+.success-page main {
+    width: 100%;
+    max-width: 732px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-page .mist {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* 𐙚 Success dress images */
+.dress-collection {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.dress-link {
+    display: block;
+    width: 200px;
+    margin-top: -18px;
+}
+
+.dress-link img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border: 1px solid #ff839e;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.dress-link:hover img {
+    scale: 1.30;
+    box-shadow: 0 4px 12px #ff8ea4;
+}
+
+.accentimg {
+    width: 300px;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 19px;
+}
+
+/* 𐙚 Success collection button */
+.collection-button img {
+    width: 410px;
+    height: auto;
+    display: block;
+    transition: transform 0.2s ease;
+    margin-left: 105px;
+    margin-top: 15px;
+}
+
+.collection-button:hover img {
+    content: url("../img/explorerbuttonhover.png");
+    transform: scale(1.05);
+    filter: drop-shadow(0 4px 6px #e48f96);
+}
+
+
+
+
+        /* 𐙚 Medias */
+
+/* Tablets and large phones */
+@media (max-width: 768px) {
+
+    /* Main */
+
+    .success-page main {
+        display: block;
+        width: 100%;
+        max-width: none;
+        padding: 0 12px;
+    }
+
+    /* Success Box */
+
+    .success-box {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        min-height: auto;
+        padding: 25px 15px;
+        margin: 20px auto 30px;
+    }
+
+    /* Logo */
+
+    .logo-sucess {
+        width: 230px;
+        max-width: 80%;
+        height: auto;
+    }
+
+    /* Text */
+
+    .success-box h1 {
+        font-size: 48px;
+    }
+
+    .success-box h2 {
+        font-size: 20px;
+    }
+
+    .success-box .p1,
+    .success-box .p2 {
+        font-size: 19px;
+        margin-left: 0;
+    }
+
+    /* Decorative Accent */
+
+    .accentimg {
+        width: 230px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Dresses */
+
+    .dress-collection {
+        display: flex;
+        gap: 6px;
+        width: 100%;
+    }
+
+    .dress-link {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .dress-link img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 5 / 7;
+        object-fit: cover;
+    }
+
+    /* Collection Button */
+
+    .collection-button {
+        display: block;
+        width: 100%;
+        max-width: 410px;
+        margin: 15px auto 0;
+    }
+
+    .collection-button img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+    
