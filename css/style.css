@@ -410,7 +410,7 @@ textarea:user-valid {
 }
 
 .collection-button:hover img {
-    content: url("../img/explorerbuttonhover.png");
+    content: url("../img/explorerbuttonhover.webp");
     transform: scale(1.05);
     filter: drop-shadow(0 4px 6px #e48f96);
 }
