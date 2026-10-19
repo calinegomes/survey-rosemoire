@@ -45,10 +45,12 @@
                         <input id="userEmail" type="email" name="userEmail" placeholder="Enter your email" required>
                         <br>
                         <label for="userPhone">Phone Number:</label>
-                        <input id="userPhone" type="tel" name="userPhone" placeholder="Area Code + XXXXXXXXXXX" pattern="[0-9]{11}" required>
+                        <input id="userPhone" type="tel" name="userPhone" placeholder="Area Code + XXXXXXXXXXX" pattern="[0-9]{11}" aria-describedby="phoneHelp"> 
+                        <small id="phoneHelp"> Enter 11 digits, including the area code, without spaces or hyphens.</small>
                         <br>
                         <label for="userImage">Upload Image:</label>
-                        <input id="userImage" type="file" accept="image/*" name="userImage">
+                        <input id="userImage" type="file" accept="image/*" name="userImage" aria-describedby="imageHelp">
+                        <small id="imageHelp"> Upload a photo in PNG or JPG format. </small>
                         <br>
                     </fieldset>
                     
