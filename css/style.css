@@ -181,12 +181,14 @@ input[type="file"] {
     font-size: 16px;
 }
 
-input[type="tel"] {
+input[type="tel"],
+input[type="file"] {
 margin-bottom: 0;
 }
 
 small{
-margin-bottom: 20px;
+margin-bottom: 1px;
+margin-top: 3px;
 display: inline-block;
 }
 
