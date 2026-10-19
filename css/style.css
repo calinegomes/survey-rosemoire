@@ -181,6 +181,15 @@ input[type="file"] {
     font-size: 16px;
 }
 
+input[type="tel"] {
+margin-bottom: 0;
+}
+
+small{
+margin-bottom: 20px;
+display: inline-block;
+}
+
 input::placeholder,
 textarea::placeholder {
     color: #c77d83;
@@ -280,12 +289,6 @@ textarea:user-valid {
     border-color: #d8a0ad;
     box-shadow: 0 0 4px #ffd8e1;
 }
-
-
-
-
-
-
 
 
 
@@ -414,8 +417,6 @@ textarea:user-valid {
     transform: scale(1.05);
     filter: drop-shadow(0 4px 6px #e48f96);
 }
-
-
 
 
         /* 𐙚 Medias */
