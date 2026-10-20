@@ -1,4 +1,4 @@
-/* 𐙚 Reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ html {
     scrollbar-gutter: stable;
 }
 
-/* 𐙚 Page settings */
+/* Page settings */
 body {
     background-color: #ffdedf;
     background-image: url("../img/background.webp");
@@ -27,7 +27,7 @@ main {
     color: #7e584e;
 }
 
-/* 𐙚 Mist effect */
+/* Mist effect */
 .mist {
     position: relative;
     min-height: 100vh;
@@ -46,7 +46,7 @@ main {
     opacity: 0.7;
 }
 
-/* 𐙚 Survey header and logo */
+/* Survey header and logo */
 header {
     text-align: center;
     margin-bottom: 0.625rem;
@@ -66,7 +66,7 @@ h1 {
     text-align: center;
 }
 
-/* 𐙚 Survey form */
+/* Survey form */
 form {
     margin-bottom: 1.25rem;
     padding: 1.5625rem 1.5625rem 1.875rem;
@@ -90,7 +90,7 @@ legend {
     padding: 0 0.3125rem;
 }
 
-/* 𐙚 Survey labels and text */
+/* Survey labels and text */
 label {
     display: inline-block;
     margin-bottom: 0.25rem;
@@ -145,7 +145,7 @@ p {
     font-weight: 600;
 }
 
-/* 𐙚 Survey inputs */
+/* Survey inputs */
 input,
 select,
 textarea {
@@ -218,7 +218,7 @@ input[type="file"]::file-selector-button:hover {
     box-shadow: 0 0 0.25rem #e48f96;
 }
 
-/* 𐙚 Survey buttons */
+/* Survey buttons */
 button {
     display: block;
     margin-left: auto;
@@ -263,7 +263,7 @@ button[type="reset"]:hover {
     box-shadow: 0 0 0.25rem #e48f96;
 }
 
-/* 𐙚 Survey focus and validation */
+/* Survey focus and validation */
 input:focus,
 textarea:focus,
 select:focus,
@@ -295,7 +295,7 @@ textarea:user-valid {
 
 
 
-/* 𐙚 Success page */
+/* Success page */
 .success-box {
     width: 100%;
     max-width: 62.5rem;
@@ -339,7 +339,7 @@ textarea:user-valid {
     color: #d394a8;
 }
 
-/* 𐙚 Success logo and page layout */
+/* Success logo and page layout */
 .sucess-header {
     position: relative;
     text-align: center;
@@ -369,7 +369,7 @@ textarea:user-valid {
     justify-content: flex-start;
 }
 
-/* 𐙚 Success dress images */
+/* Success dress images */
 .dress-collection {
     display: flex;
     justify-content: center;
@@ -404,7 +404,7 @@ textarea:user-valid {
     margin-bottom: 1.1875rem;
 }
 
-/* 𐙚 Success collection button */
+/* Success collection button */
 .collection-button img {
     width: 25.625rem;
     height: auto;
@@ -421,7 +421,7 @@ textarea:user-valid {
 }
 
 
-        /* 𐙚 Medias */
+        /* Medias */
 
 /* Tablets and large phones */
 @media (max-width: 48rem) {
