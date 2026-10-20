@@ -1,3 +1,4 @@
+
 /* 𐙚 Reset */
 * {
     margin: 0;
@@ -22,7 +23,7 @@ body {
 
 main {
     width: 100%;
-    max-width: 700px;
+    max-width: 43.75rem;
     margin: 0 auto;
     color: #7e584e;
 }
@@ -49,67 +50,67 @@ main {
 /* 𐙚 Survey header and logo */
 header {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 img.logo {
-    width: 300px;
+    width: 18.75rem;
     height: auto;
-    margin: -25px auto;
+    margin: -1.5625rem auto;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #8a675d;
     font-family: 'Tangerine', cursive;
-    margin: 7px 0 10px;
+    margin: 0.4375rem 0 0.625rem;
     text-align: center;
 }
 
 /* 𐙚 Survey form */
 form {
-    margin-bottom: 20px;
-    padding: 25px 25px 30px;
+    margin-bottom: 1.25rem;
+    padding: 1.5625rem 1.5625rem 1.875rem;
     background-color: #ffe9ea;
-    border-radius: 15px;
-    font-size: 20px;
-    border: 1px solid #7e584e;
+    border-radius: 0.9375rem;
+    font-size: 1.25rem;
+    border: 0.0625rem solid #7e584e;
 }
 
 fieldset {
-    padding: 15px;
-    border: 1px solid #8a675d;
-    border-radius: 8px;
-    margin-bottom: 16px;
+    padding: 0.9375rem;
+    border: 0.0625rem solid #8a675d;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 legend {
-    font-size: 23px;
+    font-size: 1.4375rem;
     font-weight: bold;
     color: #8a675d;
-    padding: 0 5px;
+    padding: 0 0.3125rem;
 }
 
 /* 𐙚 Survey labels and text */
 label {
     display: inline-block;
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
     font-weight: 500;
 }
 
 label[for="userImage"] {
     display: block;
-    margin-top: 5px;
-    margin-bottom: 6px;
+    margin-top: 0.3125rem;
+    margin-bottom: 0.375rem;
 }
 
 label[for="maritalStatus"] {
-    margin-top: 4px;
+    margin-top: 0.25rem;
     font-weight: 600;
 }
 
 label[for="musicStyle"] {
-    margin-top: 3px;
+    margin-top: 0.1875rem;
     font-weight: 600;
 }
 
@@ -125,22 +126,22 @@ label[for="userPhone"] {
 }
 
 label[for="userComments"] {
-    margin-top: 8px;
+    margin-top: 0.5rem;
 }
 
 label[for="female"],
 label[for="male"] {
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 label[for="priceRange500plus"],
 label[for="outfitUniqueness"],
 label[for="themeOther"] {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 p {
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
     color: #7e584e;
     font-weight: 600;
 }
@@ -150,18 +151,18 @@ input,
 select,
 textarea {
     width: 100%;
-    padding: 8px;
-    border: 1px solid #8a675d;
-    border-radius: 8px;
-    margin-bottom: 4px;
+    padding: 0.5rem;
+    border: 0.0625rem solid #8a675d;
+    border-radius: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
 #musicStyle {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 textarea {
-    min-height: 100px;
+    min-height: 6.25rem;
 }
 
 input[type="radio"],
@@ -171,51 +172,51 @@ input[type="checkbox"] {
 }
 
 input[type="color"] {
-    width: 40px;
-    padding: 0 5px;
-    border: 1px solid #c28396;
+    width: 2.5rem;
+    padding: 0 0.3125rem;
+    border: 0.0625rem solid #c28396;
     background-color: #fff5f5;
 }
 
 input[type="file"] {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 input[type="tel"],
 input[type="file"] {
-margin-bottom: 0;
+    margin-bottom: 0;
 }
 
-small{
-margin-bottom: 1px;
-margin-top: 3px;
-display: inline-block;
+small {
+    margin-bottom: 0.0625rem;
+    margin-top: 0.1875rem;
+    display: inline-block;
 }
 
 input::placeholder,
 textarea::placeholder {
     color: #c77d83;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 input[type="file"]::file-selector-button {
     background-color: #ffd8dc;
     color: #7e584e;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 16px;
-    border: 1px solid #c77d83;
-    border-radius: 8px;
-    padding: 6px 12px;
-    margin-right: 10px;
+    font-size: 1rem;
+    border: 0.0625rem solid #c77d83;
+    border-radius: 0.5rem;
+    padding: 0.375rem 0.75rem;
+    margin-right: 0.625rem;
     cursor: pointer;
 }
 
 input[type="file"]::file-selector-button:hover {
     background-color: #ffd0d3;
     color: #ffffff;
-    border: 1px dashed #e45b67;
-    box-shadow: 0 0 4px #e48f96;
+    border: 0.0625rem dashed #e45b67;
+    box-shadow: 0 0 0.25rem #e48f96;
 }
 
 /* 𐙚 Survey buttons */
@@ -223,22 +224,22 @@ button {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 130px;
-    height: 30px;
-    padding: 6px 25px;
+    width: 8.125rem;
+    height: 1.875rem;
+    padding: 0.375rem 1.5625rem;
     background-color: #ffd8dc;
-    border: 1px solid #c28396;
-    border-radius: 8px;
+    border: 0.0625rem solid #c28396;
+    border-radius: 0.5rem;
     font-family: 'Montserrat', cursive;
-    font-size: 15px;
+    font-size: 0.9375rem;
     color: #7e584e;
     font-weight: bold;
     cursor: pointer;
 }
 
 .submit-button {
-    width: 300px;
-    height: 100px;
+    width: 18.75rem;
+    height: 6.25rem;
     background-image: url("../img/submitbutton.webp");
     background-size: 100% 100%;
     background-position: center;
@@ -246,21 +247,21 @@ button {
     background-color: transparent;
     border: none;
     padding: 0;
-    margin: -5px auto 0;
+    margin: -0.3125rem auto 0;
     transition: transform 0.2s ease;
 }
 
 .submit-button:hover {
     background-image: url("../img/submitbuttonhover.webp");
     transform: scale(1.05);
-    filter: drop-shadow(0 4px 6px #e48f96);
+    filter: drop-shadow(0 0.25rem 0.375rem #e48f96);
 }
 
 button[type="reset"]:hover {
     background-color: #ff9fa6;
     color: #ffffff;
-    border: 1px dashed #e45b67;
-    box-shadow: 0 0 4px #e48f96;
+    border: 0.0625rem dashed #e45b67;
+    box-shadow: 0 0 0.25rem #e48f96;
 }
 
 /* 𐙚 Survey focus and validation */
@@ -269,8 +270,8 @@ textarea:focus,
 select:focus,
 button:focus {
     outline: none;
-    border: 1px dashed #e45b67;
-    box-shadow: 0 0 4px #e48f96;
+    border: 0.0625rem dashed #e45b67;
+    box-shadow: 0 0 0.25rem #e48f96;
 }
 
 select option:checked {
@@ -282,14 +283,14 @@ input:user-invalid,
 select:user-invalid,
 textarea:user-invalid {
     border-color: #eb868e;
-    box-shadow: 0 0 4px #ff818b;
+    box-shadow: 0 0 0.25rem #ff818b;
 }
 
 input:user-valid,
 select:user-valid,
 textarea:user-valid {
     border-color: #d8a0ad;
-    box-shadow: 0 0 4px #ffd8e1;
+    box-shadow: 0 0 0.25rem #ffd8e1;
 }
 
 
@@ -298,42 +299,42 @@ textarea:user-valid {
 /* 𐙚 Success page */
 .success-box {
     width: 100%;
-    max-width: 1000px;
+    max-width: 62.5rem;
     min-height: auto;
-    padding: 50px 50px 20px;    
-    margin: 20px auto 0;
+    padding: 3.125rem 3.125rem 1.25rem;
+    margin: 1.25rem auto 0;
     text-align: center;
     background-color: #ffe9ea;
-    border-radius: 15px;
-    border: 1px solid #7e584e;
+    border-radius: 0.9375rem;
+    border: 0.0625rem solid #7e584e;
 }
 
 .success-box h1 {
     font-family: 'Tangerine', cursive;
-    font-size: 60px;
-    margin-top: -20px;
+    font-size: 3.75rem;
+    margin-top: -1.25rem;
     font-weight: 600;
 }
 
 .success-box h2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 25px;
-    margin-top: -1px;
+    font-size: 1.5625rem;
+    margin-top: -0.0625rem;
     font-weight: 400;
     font-style: italic;
 }
 
 .success-box .p1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 500;
-    margin-top: -1px;
-    margin-left: 13px;
+    margin-top: -0.0625rem;
+    margin-left: 0.8125rem;
 }
 
 .success-box .p2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 23px;
+    font-size: 1.4375rem;
     font-weight: 500;
     font-style: italic;
     color: #d394a8;
@@ -344,21 +345,21 @@ textarea:user-valid {
     position: relative;
     text-align: center;
     margin: 0;
-    padding-top: 15px;
+    padding-top: 0.9375rem;
 }
 
 .logo-sucess {
     display: block;
-    width: 300px;
+    width: 18.75rem;
     max-width: 80%;
     height: auto;
-    margin: -20px auto;
+    margin: -1.25rem auto;
 }
 
 .success-page main {
     width: 100%;
-    max-width: 732px;
-    padding: 0 16px;
+    max-width: 45.75rem;
+    padding: 0 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,58 +374,58 @@ textarea:user-valid {
 .dress-collection {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 40px;
+    gap: 0.625rem;
+    margin-top: 2.5rem;
 }
 
 .dress-link {
     display: block;
-    width: 200px;
-    margin-top: -18px;
+    width: 12.5rem;
+    margin-top: -1.125rem;
 }
 
 .dress-link img {
     width: 100%;
-    height: 280px;
+    height: 17.5rem;
     object-fit: cover;
-    border: 1px solid #ff839e;
-    border-radius: 8px;
+    border: 0.0625rem solid #ff839e;
+    border-radius: 0.5rem;
     transition: 0.2s;
 }
 
 .dress-link:hover img {
     scale: 1.30;
-    box-shadow: 0 4px 12px #ff8ea4;
+    box-shadow: 0 0.25rem 0.75rem #ff8ea4;
 }
 
 .accentimg {
-    width: 300px;
+    width: 18.75rem;
     height: auto;
-    margin-top: 5px;
-    margin-bottom: 19px;
+    margin-top: 0.3125rem;
+    margin-bottom: 1.1875rem;
 }
 
 /* 𐙚 Success collection button */
 .collection-button img {
-    width: 410px;
+    width: 25.625rem;
     height: auto;
     display: block;
     transition: transform 0.2s ease;
-    margin-left: 105px;
-    margin-top: 15px;
+    margin-left: 6.5625rem;
+    margin-top: 0.9375rem;
 }
 
 .collection-button:hover img {
     content: url("../img/explorerbuttonhover.webp");
     transform: scale(1.05);
-    filter: drop-shadow(0 4px 6px #e48f96);
+    filter: drop-shadow(0 0.25rem 0.375rem #e48f96);
 }
 
 
         /* 𐙚 Medias */
 
 /* Tablets and large phones */
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
 
     /* Main */
 
@@ -432,7 +433,7 @@ textarea:user-valid {
         display: block;
         width: 100%;
         max-width: none;
-        padding: 0 12px;
+        padding: 0 0.75rem;
     }
 
     /* Success Box */
@@ -442,14 +443,14 @@ textarea:user-valid {
         max-width: 100%;
         min-width: 0;
         min-height: auto;
-        padding: 25px 15px;
-        margin: 20px auto 30px;
+        padding: 1.5625rem 0.9375rem;
+        margin: 1.25rem auto 1.875rem;
     }
 
     /* Logo */
 
     .logo-sucess {
-        width: 230px;
+        width: 14.375rem;
         max-width: 80%;
         height: auto;
     }
@@ -457,23 +458,23 @@ textarea:user-valid {
     /* Text */
 
     .success-box h1 {
-        font-size: 48px;
+        font-size: 3rem;
     }
 
     .success-box h2 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .success-box .p1,
     .success-box .p2 {
-        font-size: 19px;
+        font-size: 1.1875rem;
         margin-left: 0;
     }
 
     /* Decorative Accent */
 
     .accentimg {
-        width: 230px;
+        width: 14.375rem;
         max-width: 100%;
         height: auto;
     }
@@ -482,7 +483,7 @@ textarea:user-valid {
 
     .dress-collection {
         display: flex;
-        gap: 6px;
+        gap: 0.375rem;
         width: 100%;
     }
 
@@ -503,8 +504,8 @@ textarea:user-valid {
     .collection-button {
         display: block;
         width: 100%;
-        max-width: 410px;
-        margin: 15px auto 0;
+        max-width: 25.625rem;
+        margin: 0.9375rem auto 0;
     }
 
     .collection-button img {
@@ -514,4 +515,5 @@ textarea:user-valid {
         margin: 0 auto;
     }
 }
+
     
