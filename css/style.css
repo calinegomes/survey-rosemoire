@@ -1,4 +1,3 @@
-
 /* 𐙚 Reset */
 * {
     margin: 0;
@@ -38,7 +37,7 @@ main {
 }
 
 .mist-image {
-    position: absolute;
+    position: fixed;
     inset: 0;
     width: 100%;
     height: 100%;
